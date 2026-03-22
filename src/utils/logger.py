@@ -18,7 +18,7 @@ def get_logger(name):
     logger.addHandler(console_handler)
 
     # 2. Output to File (optional but recommended for DE)
-    file_handler = logging.FileHandler('pipeline.log')
+    file_handler = logging.FileHandler('logs/pipeline.log')
     file_handler.setFormatter(formatter)
     logger.addHandler(file_handler)
 
