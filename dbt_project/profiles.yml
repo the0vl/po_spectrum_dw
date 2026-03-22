@@ -1,0 +1,8 @@
+# dbt_project/profiles.yml
+dbt_project:
+  outputs:
+    dev:
+      type: duckdb
+      path: '../data/warehouse.duckdb'
+      threads: 4
+  target: dev

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_market_data
+    schema: main
+    loader: external
+    tables:
+      - name: stg_crypto_prices
+        path: ../data/processed/*.csv # This reads all Silver CSVs
