@@ -205,3 +205,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# ==========================================
+# Data Engineering Specifics
+# ==========================================
+# Ignore all local data storage
+data/
+*.csv
+*.json
+*.parquet
+*.avro
+*.sqlite
+
+# dbt specific (for when we add Phase 3)
+target/
+dbt_packages/
+logs/
+*.log
+
+# MacOS hidden files
+.DS_Store
