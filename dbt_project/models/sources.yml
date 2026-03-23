@@ -6,4 +6,11 @@ sources:
     loader: external
     tables:
       - name: stg_crypto_prices
-        path: ../data/processed/*.csv # This reads all Silver CSVs
+        path: ../data/processed/market_data_silver_*.csv
+
+  - name: raw_reddit_posts
+    schema: main
+    loader: external
+    tables:
+      - name: stg_reddit_posts
+        path: ../data/processed/reddit_posts_silver_*.csv
